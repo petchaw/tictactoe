@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Pascal Bruno">
+
+    <title>Tic Tac Toe</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/starter-template.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+    <script src="js/tictactoe.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MULTIPLAYER TIC TAC TOE</a>
+        </div>
+        <div class="collapse navbar-collapse">
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Tic Tac Toe</h1>
+        <center>
+        <table style="background-image:url(images/tic-tac-toe-board.gif); background-repeat:no-repeat;" align="center" width="220" height="220" border="0">
+          <tr align="center">
+            <td align="center" id="p1" onClick="play('p1');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p2" onClick="play('p2');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p3" onClick="play('p3');"><img src="images/b.jpg"/></td>
+          </tr>
+          <tr align="center">
+            <td align="center" id="p4" onClick="play('p4');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p5" onClick="play('p5');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p6" onClick="play('p6');"><img src="images/b.jpg"/></td>
+          </tr>
+          <tr align="center">
+            <td align="center" id="p7" onClick="play('p7');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p8" onClick="play('p8');"><img src="images/b.jpg"/></td>
+            <td align="center" id="p9" onClick="play('p9');"><img src="images/b.jpg"/></td>
+          </tr>
+        </table>
+        <br/><br/>
+        Pick one: 
+        <label class="radio-inline">
+          <input type="radio" name="shape" id="shapeo" value="o"> o
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="shape" id="shapex" value="x"> x
+        </label>
+        <br/><br/>
+        <button type="button" class="btn btn-lg btn-default" onclick="restart();">Restart</button>
+      </center>
+      </div>
+
+    </div><!-- /.container -->
+    <div class="footer">
+      <div class="container">
+        <br/><br/>
+        <p class="text-muted">Built by Pascal during slow time at CSLAWLLP. (don't tell anyone) Aug 13th, 2014</p>
+        <p class="text-muted">Thanks to <a href="http://www.firebase.com/">Firebase</a></p>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
